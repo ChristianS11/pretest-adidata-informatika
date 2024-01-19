@@ -1,0 +1,126 @@
+.dashboard__sidebar {
+    will-change: transform;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+  
+@media (max-width: 991px) {
+    .dashboard__sidebar {
+      z-index: 110;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      margin-top: 90px;
+    }
+}
+  
+@media (max-width: 767px) {
+    .dashboard__sidebar {
+      width: 80%;
+    }
+}
+
+.-is-sidebar-hidden .dashboard__sidebar {
+    transform: translateX(-100%);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+  
+.dashboard__sidebar {
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    background-color: white;
+    flex-shrink: 0;
+    width: 300px;
+    height: calc(100%);
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    /* margin-top: 90px; */
+}
+  
+@media (max-width: 1199px) {
+    .dashboard__sidebar {
+      width: 250px;
+    }
+}
+  
+@media (max-width: 991px) {
+    .dashboard__sidebar {
+      position: relative;
+      width: 100%;
+      padding: 20px;
+      margin-top: 80px;
+    }
+}
+  
+.dashboard__sidebar.-base {
+    padding-top: 0;
+}
+  
+.dashboard__main {
+    will-change: padding-left;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+  
+@media (max-width: 991px) {
+    .dashboard__main::after {
+      content: "";
+      position: fixed;
+      z-index: 50;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      pointer-events: auto;
+      opacity: 1;
+      transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+}
+  
+.-is-sidebar-hidden .dashboard__sidebar {
+    transform: translateX(-100%);
+}
+  
+.-is-sidebar-hidden .dashboard__main {
+    padding-left: 0;
+}
+  
+.-is-sidebar-hidden .dashboard__main::after {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.dashboard__main {
+    margin-top: 90px;
+    width: 100%;
+    padding-left: 300px;
+}
+  
+@media (max-width: 1199px) {
+    .dashboard__main {
+      padding-left: 250px;
+    }
+}
+  
+@media (max-width: 991px) {
+    .dashboard__main {
+      padding-left: 0;
+      margin-top: 30px;
+    }
+}
+
+.border-right-light {
+    border-right: 1px solid #EDEDED;
+}
+  

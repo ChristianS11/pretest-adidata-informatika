@@ -1,0 +1,29 @@
+
+.container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.py-30 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.px-20 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+  
+.border-top-light {
+    border-top: 1px solid #EDEDED;
+}
+  
+
+.items-center {
+    align-items: center !important;
+}
+
+.justify-between {
+    justify-content: space-between !important;
+}
+  

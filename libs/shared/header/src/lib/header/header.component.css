@@ -1,0 +1,123 @@
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.border-bottom-light {
+    border-bottom: 1px solid #EDEDED;
+}
+
+.px-10 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.py-20 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.text-dark-1 {
+    color: #140342!important;
+}
+  
+.justify-between {
+    justify-content: space-between !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+  
+.d-flex {
+    display: flex !important;
+}
+  
+.header.-base-sidebar {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+}
+  
+.header.-base-sidebar .row {
+    flex-wrap: nowrap;
+}
+  
+@media (max-width: 767px) {
+    .header.-base-sidebar .row {
+      margin: 0;
+    }
+    .header.-base-sidebar .col-auto {
+      padding: 0;
+    }
+}
+  
+@media (max-width: 575px) {
+    .header.-base-sidebar .header__logo img {
+      width: 80%;
+    }
+}
+  
+.header {
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    max-width: 100% !important;
+}
+
+.header.-type-1 .header__container {
+    position: relative;
+    max-width: calc(1500px);
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+}
+  
+@media (max-width: 991px) {
+    .header.-type-1 .header__container {
+      padding: 20px;
+    }
+}
+
+.header.-base .header__container {
+    position: relative;
+    padding: 0 60px;
+}
+  
+@media (max-width: 991px) {
+    .header.-base .header__container {
+      padding: 0 40px;
+    }
+}
+
+.header__explore > a {
+    position: relative;
+    z-index: 1;
+}
+  
+.header__explore > a::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    left: -14px;
+    right: -14px;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+}
+  
+.header__explore > a:hover {
+    color: var(--color-green-1) !important;
+}
+  
+.header__explore > a:hover::before {
+    opacity: 1;
+}
+
+html.-dark-mode .-dark-text-white {
+    color: white !important;
+}
+  

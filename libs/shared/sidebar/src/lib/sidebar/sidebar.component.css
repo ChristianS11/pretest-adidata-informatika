@@ -1,0 +1,23 @@
+.sidebar.-base-sidebar .sidebar__inner {
+    padding-top: 10px;
+}
+  
+.sidebar.-base-sidebar .sidebar__item {
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 0 20px;
+    height: 55px;
+}
+  
+@media (max-width: 575px) {
+    .sidebar.-base-sidebar .sidebar__item {
+      border-radius: 0;
+      height: 45px;
+    }
+}
+  
+.sidebar.-base-sidebar .sidebar__item.-is-active {
+    background-color: #F4F1FE;
+    color: #6440FB !important;
+}

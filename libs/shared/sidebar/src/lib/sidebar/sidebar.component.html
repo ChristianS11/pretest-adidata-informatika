@@ -1,0 +1,24 @@
+<div class="sidebar -base-sidebar border-right-light">
+    <div class="sidebar__inner">
+        <div>
+          <div class="sidebar__item" routerLinkActive="-is-active" [routerLinkActiveOptions]={exact:true}>
+            <a
+              routerLink="/"
+              class="-dark-sidebar-white d-flex items-center text-17 lh-1 fw-500"
+            >
+              <i class="text-20 icon-time-management mr-15"></i>
+              Home
+            </a>
+          </div>
+
+          <div class="sidebar__item" routerLinkActive="-is-active">
+            <a
+              routerLink="/crud"
+              class="-dark-sidebar-white d-flex items-center text-17 lh-1 fw-500"
+            >
+              <i class="text-20 icon-time-management mr-15"></i>
+              CRUD
+            </a>
+          </div>
+        </div>
+  </div>
