@@ -1,5 +1,12 @@
 # Pretest
 
+## Angular Version
+
+v17.0.0
+
+## NX Version
+
+v17.2.8
 
 ## Installation
 
